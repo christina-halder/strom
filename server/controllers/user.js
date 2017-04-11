@@ -5,7 +5,7 @@ module.exports = {
         return User.create({
                     title: req.body.title,
                 }).
-                then(user => res.status(201).send(res)).
+                then(user => res.status(201).send('User has been created successfully')).
                 catch(error => res.status(400).send(error));
     },
 };
