@@ -6,7 +6,6 @@ module.exports = (app) => {
     });
 
     app.post('/users/create', function(req, res) {
-        // res.send(req)
         usersController.create(req, res)
     });
 };
